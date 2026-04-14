@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dássone J. Yotamo | Backend Engineer</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #0a0a0a;
+            color: #e5e5e5;
+        }
+
+        svg {
+            stroke: currentColor;
+            stroke-width: 2;
+            stroke-linecap: round;
+            stroke-linejoin: round;
+            fill: none;
+        }
+
+        .mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        .gradient-text {
+            background: linear-gradient(90deg, #3b82f6, #8b5cf6, #ec4899);
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+
+        .card {
+            background-color: #171717;
+            border: 1px solid #262626;
+            transition: all 0.3s ease;
+        }
+
+        .card:hover {
+            border-color: #404040;
+            transform: translateY(-2px);
+        }
+    </style>
+</head>
+
+<body class="selection:bg-blue-500/30 selection:text-blue-200">
+    <div class="max-w-4xl mx-auto px-6 py-12 md:py-24">
+        <!-- Header -->
+        <header class="flex flex-col md:flex-row md:items-center justify-between gap-6 mb-16">
+            <div>
+                <h1 class="text-3xl md:text-4xl font-bold tracking-tight mb-2">Dássone J. Yotamo</h1>
+                <p class="text-lg text-zinc-400 mono">Backend Engineer & Distributed Systems Enthusiast</p>
+            </div>
+            <div class="flex items-center gap-4">
+                <a href="https://github.com/dyotamo" target="_blank" rel="noopener"
+                    class="p-2 rounded-full hover:bg-zinc-800 transition-colors" title="GitHub">
+                    <i data-lucide="github" class="w-6 h-6"></i>
+                </a>
+                <a href="https://linkedin.com/in/dyotamo" target="_blank" rel="noopener"
+                    class="p-2 rounded-full hover:bg-zinc-800 transition-colors" title="LinkedIn">
+                    <i data-lucide="linkedin" class="w-6 h-6"></i>
+                </a>
+            </div>
+        </header>
+
+        <!-- Hero -->
+        <section class="mb-20">
+            <div
+                class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-medium mb-6">
+                <span class="relative flex h-2 w-2">
+                    <span
+                        class="animate-ping absolute inline-flex h-full w-full rounded-full bg-blue-400 opacity-75"></span>
+                    <span class="relative inline-flex rounded-full h-2 w-2 bg-blue-500"></span>
+                </span>
+                A nice guy online
+            </div>
+            <h2 class="text-4xl md:text-6xl font-extrabold mb-8 leading-tight">
+                Building <span class="gradient-text">resilient backend systems</span> with a focus on code design.
+            </h2>
+            <div class="prose prose-invert prose-lg max-w-2xl text-zinc-400 leading-relaxed">
+                <p>
+                    I consider myself a curious computer programmer who likes to play with <strong>distributed
+                        systems</strong>, <strong>code design</strong>, and <strong>Linux</strong>, always exploring
+                    different programming languages.
+                </p>
+            </div>
+        </section>
+
+        <!-- Expertise -->
+        <section class="mb-20">
+            <h3 class="text-xl font-bold mb-8 flex items-center gap-2">
+                <i data-lucide="code-2" class="w-5 h-5 text-blue-500"></i>
+                Expertise & Technologies
+            </h3>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
+                <div class="card p-6 rounded-2xl">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-4">Core Competencies</h4>
+                    <ul class="space-y-3">
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Backend Development Practices</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Code Design & Architecture</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Distributed Systems</span>
+                        </li>
+                        <li class="flex items-center gap-3">
+                            <i data-lucide="check-circle-2" class="w-4 h-4 text-emerald-500"></i>
+                            <span>Linux & Containers</span>
+                        </li>
+                    </ul>
+                </div>
+                <div class="card p-6 rounded-2xl">
+                    <h4 class="text-sm font-bold uppercase tracking-widest text-zinc-500 mb-4">Technologies</h4>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Java</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Python</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Go</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Elixir</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">API Design</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">K8s</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">AWS</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Terraform</span>
+                        <span class="px-3 py-1.5 rounded-lg bg-zinc-800 text-sm font-medium">Cloud Computing</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer
+            class="pt-12 border-t border-zinc-800 text-zinc-500 text-sm flex flex-col md:flex-row justify-between items-center gap-4">
+            <p>&copy; 2026 Dássone J. Yotamo. Built with curiosity.</p>
+            <div class="flex gap-6">
+                <a href="https://github.com/dyotamo" target="_blank" rel="noopener"
+                    class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <i data-lucide="github" class="w-4 h-4"></i>
+                    GitHub
+                </a>
+                <a href="https://linkedin.com/in/dyotamo" target="_blank" rel="noopener"
+                    class="flex items-center gap-2 hover:text-zinc-300 transition-colors">
+                    <i data-lucide="linkedin" class="w-4 h-4"></i>
+                    LinkedIn
+                </a>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
+</body>
+
+</html>
